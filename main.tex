@@ -18,7 +18,7 @@ citecolor=blue}
 \normalsize
 \texttt{mazhm.hakim@outlook.com} \\
 \vspace{2.0em}
-{\scshape January 2024}
+{\scshape January-February 2024}
 }
 
 \begin{document}
@@ -42,8 +42,6 @@ citecolor=blue}
 
 It is the original paper on redirected walking. In this article, Razzaque et al. first introduced the redirected walking technique to allow participants to move about in a immersive virtual environment. The authors' aim was to develop the technique so that participants can turn within the VE by turning their body instead of using any hand control. This implementation of redirected walking relied on manipulation of the mapping between the user's real and virtual \emph{rotation}. This work demonstrated that small rotational changes are less likely to be detected and that the rotation is less likely to be noticed if the user's head is already turning. I cannot help reading this to create the foundational knowledge in this realm.
 
-%Rotation, translation, curvature, bending
-
 \subsection{Redirected Walking}
 \textbf{\cite{razzaque2005redirected}}\textsuperscript{**}
 
@@ -54,7 +52,7 @@ This dissertation will be beneficial in forming the foundational knowledge on re
 
 In this paper, Suma et al. presented a novel taxonomy that separates redirection techniques according to their geometric flexibility versus the likelihood that they will be noticed by the users. This taxonomy differentiate between redirection techniques that can be applied without the user's perceptibility (\emph{subtle}) and techniques that are perceptible by the user (\emph{overt}). Besides, based on their geometric applicability, it is also broadly divided into two categories: \emph{repositioning} techniques, \emph{reorienting} techniques. Repositioning works to manipulate correspondence between points in real and virtual worlds. It eventually compresses a larger virtual space into a smaller physical space. On the other hand, reorientation rotates the user's drift away from the boundaries of the physical space. This paper would be beneficial for me to understand the theoretical foundation for the development of automated redirection controllers that can dynamically apply a variety of techniques based upon the needs of the system and the current state of the user.
 
-\subsection[Exploring large virtual environments with an HMD when physical space is limited]{Exploring large virtual environments\\ with an HMD when physical space is limited}
+\subsection{Exploring large virtual environments with an HMD when physical space is limited}
 \textbf{\cite{williams2007exploring}}
 
 ...
@@ -63,6 +61,11 @@ In this paper, Suma et al. presented a novel taxonomy that separates redirection
 \textbf{\cite{steinicke2008analyses}}
 
 In this paper, the authors conducted a series of experiments in which they quantified how much humans can be redirected without observing inconsistencies between real and virtual motions. Their results summarize the corresponding gains in a practical useful range for their perceptibly. Reading this paper, I had got a handful idea about \emph{locomotion} and \emph{perception} in VE environments. I need to study this paper with more attention to understand the analysis of user's sensitivity to redirected walking manipulations.
+
+\subsection{Comparing four approaches to generalized redirected walking: Simulation and live user data}
+\textbf{\cite{hodgson2013comparing}}
+
+...
 
 \subsection{Leveraging change blindness for redirection in virtual environments}
 \textbf{\cite{suma2011leveraging}}
@@ -84,12 +87,19 @@ In this paper, Langbehn et al. presented that they decreased the physical radius
 
 I am having issues to understand and feel the proper idea presented in this paper. But the basic that I understand is to analyze the effects of subtle continuous reorientation techniques based on curvature gains on cognitive load was the aim of the study. And, they showed that the radius of the circular path on which the users were redirected with curvature gains had a significant effect on verbal and spatial working memory.
 
-\subsection[Subliminal reorientation and repositioning in immersive virtual environments using saccadic suppression]{Subliminal reorientation and repositioning\\ in immersive virtual environments using saccadic suppression}
+\subsection{Subliminal reorientation and repositioning in immersive virtual environments using saccadic suppression}
 \textbf{\cite{bolte2015subliminal}}
 
 In this article, Bolte and Lappe demonstrated that subtle translation of the user's viewpoint can be applied during saccades (eye blinks). The aim of this study was to investigate whether saccadic suppression of image displacement (SSID) can be used in an immersive VE to unconsciously rotate and translate the observer's viewpoint. Their study concluded that users were unable to detect approximately $\pm 0.5$m translations along the line of gaze and $\pm 5^{\circ}$ rotations in the transverse plane during saccades with and amplitude of $15^{\circ}$.
 
-\subsection[Towards physically interactive virtual environments: Reactive alignment with redirected walking]{Towards physically interactive\\ virtual environments: Reactive alignment with redirected walking}
+\subsection{A general reactive algorithm for redirected walking using artificial potential functions}
+\textbf{\cite{thomas2019general}}
+
+In this paper, Thomas et al. proposed a novel algorithm, called Push/Pull Reactive (P2R) algorithm, that uses artificial potential function\footnote{Artificial Potential Function generally represents an abstract energy. The goal of this is to determine a position that represents the lowest energy state.} to steer users away from potential collisions. Their proposed algorithm will be ideal in more complex physical environments containing obstacles or irregular boundary shapes. According to them, P2R is similar to S2C with center-based translation gain where determining the ideal direction to steer the user is the main difference between these two.
+
+Besides, they proposed three alternative reset strategies to overcome the limitation of \emph{collision problem} and \emph{endless loop} in existing reset strategies. They are: modified reset to center (MR2C), reset to gradient (R2G), and step-forward resret to gradient (SFR2G).
+
+\subsection{Towards physically interactive virtual environments: Reactive alignment with redirected walking}
 \textbf{\cite{thomas2020towards}}\textsuperscript{**}
 
 In this paper, Thomas et al. introduced a novel use of redirected walking (\emph{alignment}) that has the potential to increase usability and interactivity in VR applications. Recent research studies environmental alignment with much care to use RDW techniques to align virtual and physical coordinate systems so that it enables interactivity with the physical environment. With their reactive algorithm, Thomas et al. used repulsive mechanism to steer the user away from the physical obstacles. I think I need more time to grow my foundation and to understand the core of this paper properly.
