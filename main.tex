@@ -97,7 +97,8 @@ In this article, Bolte and Lappe demonstrated that subtle translation of the use
 
 In this paper, Thomas et al. proposed a novel algorithm, called Push/Pull Reactive (P2R) algorithm, that uses artificial potential function\footnote{Artificial Potential Function generally represents an abstract energy. The goal of this is to determine a position that represents the lowest energy state.} to steer users away from potential collisions. Their proposed algorithm will be ideal in more complex physical environments containing obstacles or irregular boundary shapes. According to them, P2R is similar to S2C with center-based translation gain where determining the ideal direction to steer the user is the main difference between these two.
 
-Besides, they proposed three alternative reset strategies to overcome the limitation of \emph{collision problem} and \emph{endless loop} in existing reset strategies. They are: modified reset to center (MR2C), reset to gradient (R2G), and step-forward resret to gradient (SFR2G).
+
+Besides, they proposed three alternative reset strategies to overcome the limitation of \emph{collision problem} and \emph{endless loop} in existing reset strategies. They are: modified reset to center (MR2C), reset to gradient\footnote{Gradient is a synonym of \emph{derivative} which indicates the rate of change of a function. This vector points in the direction of greatest increase of a function. Formally, the gradient of a scalar function $f$ is defined as the unique vector field whose dot product with any vector $v$ at each point $x$ is the directional derivative of $f$ along $v$. That is, $(\nabla f(x)) \cdot v = D_vf(x)$} (R2G), and step-forward resret to gradient (SFR2G).
 
 \subsection{Towards physically interactive virtual environments: Reactive alignment with redirected walking}
 \textbf{\cite{thomas2020towards}}\textsuperscript{**}
